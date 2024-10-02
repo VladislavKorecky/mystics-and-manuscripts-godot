@@ -9,6 +9,8 @@ offset_right = 45.0
 offset_bottom = 23.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_5qfan")
 script = ExtResource("1_my2ya")
+identifier = "1"
+content = "Placeholder text"
 
 [node name="Background" type="ColorRect" parent="."]
 unique_name_in_owner = true
@@ -25,4 +27,5 @@ theme_override_constants/margin_bottom = 5
 [node name="Label" type="Label" parent="MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "1. Placeholder text"

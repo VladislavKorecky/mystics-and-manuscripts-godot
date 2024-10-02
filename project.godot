@@ -31,6 +31,7 @@ window/stretch/aspect="expand"
 
 [gui]
 
+theme/custom="res://ui/themes/global_theme.tres"
 theme/custom_font="res://ui/fonts/Minecraft.ttf"
 
 [rendering]
