@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://10bguchw5glt"]
+
+[ext_resource type="Script" path="res://components/option/option.gd" id="1_my2ya"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qfan"]
+
+[node name="Option" type="PanelContainer"]
+offset_right = 45.0
+offset_bottom = 23.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_5qfan")
+script = ExtResource("1_my2ya")
+
+[node name="Background" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Label" type="Label" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "1. Placeholder text"
