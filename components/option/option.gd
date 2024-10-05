@@ -25,5 +25,5 @@ func update() -> void:
 	"""
 	
 	(%Label as Label).text = "%s. %s" % [identifier, content]
-	(%Label as Label).set("theme_override_colors/font_color", Color.BLACK if highlighted else Color.WHITE)
+	(%Label as Label).set("theme_override_colors/font_color", Color("0a0a0a") if highlighted else Color("fafafa"))
 	%Background.visible = highlighted

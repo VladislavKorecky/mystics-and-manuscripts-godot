@@ -2,3 +2,4 @@
 
 [resource]
 default_font_size = 24
+Label/colors/font_color = Color(0.980392, 0.980392, 0.980392, 1)

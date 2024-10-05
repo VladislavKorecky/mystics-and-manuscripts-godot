@@ -1,6 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://ji4gab7ssttw"]
+[gd_scene load_steps=3 format=3 uid="uid://ji4gab7ssttw"]
 
 [ext_resource type="Script" path="res://scenes/main_menu/main_menu.gd" id="1_d0umr"]
+[ext_resource type="PackedScene" uid="uid://ddt7khnuk81j5" path="res://components/menu/menu.tscn" id="2_u8np4"]
 
 [node name="MainMenu" type="CanvasLayer"]
 script = ExtResource("1_d0umr")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Menu" parent="MarginContainer" instance=ExtResource("2_u8np4")]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 2
+
+[connection signal="option_selected" from="MarginContainer/Menu" to="." method="_on_menu_option_selected"]
